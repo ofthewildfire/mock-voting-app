@@ -129,7 +129,3 @@ mock-voting-app/
 Contributions are welcome! If you’d like to add features or fix bugs, please fork the repository, make your changes, and open a pull request.
 
 ---
-
-## **License**
-
-This project is licensed under the MIT License. See the `LICENSE` file for details.
