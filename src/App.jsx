@@ -36,6 +36,12 @@ function App() {
       {user ? (
         <div>
           <p>Welcome, {user.displayName}!</p>
+          <hr />
+          <p>
+            This is under construction, currently login features are being
+            worked on, then the book database will be implented, but power
+            issues and me being a wreck are MAKING IT HARD BBY GIRL!
+          </p>
           <button onClick={handleLogout}>Logout</button>
         </div>
       ) : (
