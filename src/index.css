@@ -15,3 +15,96 @@ button {
   display: block;
   margin: 0 auto;
 }
+.add-book-form {
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.add-book-form h2 {
+  text-align: center;
+}
+
+.add-book-form label {
+  display: block;
+  margin: 8px 0;
+  font-weight: bold;
+  text-align: center;
+}
+
+.add-book-form input {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  display: block;
+  margin: 0 auto;
+}
+
+.add-book-form button {
+  width: 85%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: block;
+  margin-top: 15px;
+}
+
+.add-book-form button:hover {
+  background-color: #45a049;
+}
+
+.add-book-form p {
+  text-align: center;
+  margin-top: 10px;
+}
+.books-list {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.books-list h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.books-list h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.books-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.book-card {
+  background: #f4f4f4;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.book-card:hover {
+  transform: scale(1.05);
+}
+
+.book-card h4 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.book-card p {
+  font-size: 14px;
+  color: #555;
+}

@@ -1,5 +1,8 @@
 import "./App.css";
+import AddBookForm from "./components/AddBook";
+import BooksList from "./components/BookList";
 import Construction from "./components/Construction";
+import Header from "./components/Header";
 import MainPage from "./components/MainPage";
 import {
   auth,
@@ -34,10 +37,15 @@ function App() {
   };
   return (
     <div>
-      <h1>Mock Voting App</h1>
+      <Header />
       {user ? (
         <div>
-          <Construction user={user} />
+          <br />
+          {/* <Construction user={user} /> */}
+          <AddBookForm />
+          <br />
+          <BooksList />
+          <br />
           <button onClick={handleLogout}>Logout</button>
         </div>
       ) : (
