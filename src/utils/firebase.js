@@ -13,7 +13,17 @@ const firebaseConfig = {
   appId: "1:105312144565:web:c281f4e194019d9ebc02fc",
 };
 
+import {
+  getAuth,
+  GoogleAuthProvider,
+  signInWithPopup,
+  signOut,
+} from "firebase/auth";
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
-export default app;
+// Initialize Firebase Authentication
+const auth = getAuth();
+const provider = new GoogleAuthProvider();
+
+export { auth, provider, signInWithPopup, signOut, app };
