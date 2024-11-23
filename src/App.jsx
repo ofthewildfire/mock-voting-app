@@ -1,4 +1,6 @@
 import "./App.css";
+import Construction from "./components/Construction";
+import MainPage from "./components/MainPage";
 import {
   auth,
   provider,
@@ -37,15 +39,14 @@ function App() {
         <div>
           <p>Welcome, {user.displayName}!</p>
           <hr />
-          <p>
-            This is under construction, currently login features are being
-            worked on, then the book database will be implented, but power
-            issues and me being a wreck are MAKING IT HARD BBY GIRL!
-          </p>
+          <Construction />
           <button onClick={handleLogout}>Logout</button>
         </div>
       ) : (
-        <button onClick={handleLogin}>Login with Google</button>
+        <div>
+          <MainPage />
+          <button onClick={handleLogin}>Login with Google</button>
+        </div>
       )}
     </div>
   );
