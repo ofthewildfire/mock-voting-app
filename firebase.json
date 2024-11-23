@@ -15,7 +15,7 @@
   ],
   "hosting": {
     "site": "mock-voting-app",
-    "public": "public",
+    "public": "dist",
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
     "rewrites": [
       {
