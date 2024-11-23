@@ -37,9 +37,7 @@ function App() {
       <h1>Mock Voting App</h1>
       {user ? (
         <div>
-          <p>Welcome, {user.displayName}!</p>
-          <hr />
-          <Construction />
+          <Construction user={user} />
           <button onClick={handleLogout}>Logout</button>
         </div>
       ) : (

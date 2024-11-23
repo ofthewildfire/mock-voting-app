@@ -1,4 +1,4 @@
-const Construction = () => {
+const Construction = ({ user }) => {
   const containerStyle = {
     fontFamily: "'Roboto', sans-serif",
     textAlign: "center",
@@ -43,6 +43,11 @@ const Construction = () => {
     <div style={containerStyle}>
       <div style={emojiStyle}>🚧👷‍♀️👷‍♂️</div>
       <h1 style={headingStyle}>Under Construction!</h1>
+      {user && (
+        <p style={textStyle}>
+          Welcome, <strong>{user.displayName}</strong>! 😊
+        </p>
+      )}
       <p style={textStyle}>
         Hey there, trailblazer! The arena is still being prepped for the
         ultimate showdown.
